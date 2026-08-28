@@ -1,29 +1,45 @@
 {
-  "title": "Generic Open Dataset Template",
+  "title": "Orofacial Myofunctional Therapy Dataset for Obstructive Sleep Apnea",
   "upload_type": "dataset",
-  "description": "This is a reusable dataset template designed for open scientific research following FAIR principles. It includes metadata, access descriptions, and documentation files for integration with open data catalogs and repositories.",
+  "description": "This dataset supports the study \"Artificial Intelligence-Enhanced Telemedicine for Orofacial Myofunctional Therapy in Sleep Apnea: Adult Patient Outcomes\". It contains anonymised clinical and treatment-response data from 87 adult patients who underwent AI-assisted Orofacial Myofunctional Therapy (OMT) using the Smart Therapy Manager® system, aimed at treating Obstructive Sleep Apnea (OSA) and Primary Snoring (PS). The data are provided in CSV, XLSX, TTL, XML and JSON formats and are intended for clinical research, machine-learning, sleep-medicine and treatment-outcome analysis.",
   "creators": [
     {
-      "name": "Rincon-Yanez, Diego",
-      "affiliation": "Trinity College Dublin"
+      "name": "Diego Rincon-Yanez",
+      "orcid": "https://orcid.org/0000-0002-8982-1678",
+      "affiliation": "WU Wien & Universidad de Pamplona"
+    },
+    {
+      "name": "Eliana Elizabeth Rivera Capacho",
+      "orcid": "https://orcid.org/0000-0001-7678-7522",
+      "affiliation": "Universidad de Pamplona"
+    },
+    {
+      "name": "Heriberto Rangel-Navia",
+      "orcid": "https://orcid.org/0000-0001-8903-6736",
+      "affiliation": "Universidad de Pamplona"
+    },
+    {
+      "name": "Esther Mandelbaum Gonçalves Bianchini",
+      "orcid": "https://orcid.org/0000-0002-2878-4826",
+      "affiliation": "University of the Argentine Social Museum"
     }
   ],
   "keywords": [
-    "FAIR data",
-    "Open Science",
-    "Dataset template",
-    "Metadata",
-    "Semantic Web"
+    "Sleep Apnea",
+    "Respiratory Therapy",
+    "Orofacial Therapy",
+    "Primary Snoring",
+    "Myofuncional Characteristics"
   ],
   "license": "CC-BY-4.0",
   "access_right": "open",
   "related_identifiers": [
     {
-      "identifier": "https://github.com/RYFoR/dataset-template",
-      "relation": "isSupplementTo",
-      "scheme": "url"
+      "identifier": "10.1016/j.rmed.2025.108460",
+      "relation": "isPartOf",
+      "scheme": "doi"
     }
   ],
-  "version": "3.3.0",
+  "version": "3.5.0",
   "language": "eng"
 }

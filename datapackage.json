@@ -1,31 +1,33 @@
 {
   "profile": "tabular-data-package",
-  "name": "RYFoR Dataset Template for FAIR and Reusable Scientific Data",
-  "title": "RYFoR Dataset Template for FAIR and Reusable Scientific Data",
-  "description": "A synthetic dataset simulating responses from a family-oriented survey. Designed as a reusable and FAIR-aligned dataset template with structured metadata and catalog integration support.",
-  "version": "3.3.0",
-  "homepage": "https://github.com/RYFoR/dataset-template",
+  "name": "Orofacial-Myofunctional-Therapy-Obstructive-Sleep-Apnea",
+  "title": "Orofacial Myofunctional Therapy Dataset for Obstructive Sleep Apnea",
+  "description": "This dataset contains anonymised clinical and treatment-response data from 87 adult patients who underwent AI-assisted Orofacial Myofunctional Therapy (OMT) using the Smart Therapy Manager® system, aimed at treating Obstructive Sleep Apnea (OSA) and Primary Snoring (PS). The data are provided in CSV, XLSX, TTL, XML and JSON formats and are intended for clinical research, machine-learning, sleep-medicine and treatment-outcome analysis.",
+  "version": "3.5.0",
+  "homepage": "https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data",
   "created": "2025-08-07",
   "licenses": [
     {
-      "name": "MIT",
-      "path": "https://opensource.org/licenses/MIT",
-      "title": "MIT License"
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0 International"
     }
   ],
   "keywords": [
-    "survey",
-    "household",
-    "region",
-    "electricity",
-    "income",
-    "open-data",
-    "FAIR"
+    "Sleep Apnea",
+    "Respiratory Therapy",
+    "Orofacial Therapy",
+    "Primary Snoring",
+    "Myofunctional Characteristics"
   ],
   "sources": [
     {
-      "title": "RYFoR: Rincon-Yanez FAIR Open Research",
-      "path": "https://github.com/RYFoR"
+      "title": "Artificial Intelligence-Enhanced Telemedicine for Orofacial Myofunctional Therapy in Sleep Apnea: Adult Patient Outcomes",
+      "path": "https://doi.org/10.1016/j.rmed.2025.108460"
+    },
+    {
+      "title": "Orofacial Myofunctional Therapy Dataset for Obstructive Sleep Apnea",
+      "path": "https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data"
     }
   ],
   "contributors": [
@@ -33,51 +35,66 @@
       "title": "Diego Rincon-Yanez",
       "role": "author",
       "email": "rinconyanezd+ryfor@gmail.com",
-      "organization": "Trinity College Dublin"
+      "orcid": "https://orcid.org/0000-0002-8982-1678",
+      "affiliation": [
+        "Wu Wien",
+        "Universidad de Pamplona"
+      ]
+    },
+    {
+      "title": "Eliana Elizabeth Rivera Capacho",
+      "role": "author",
+      "orcid": "https://orcid.org/0000-0001-7678-7522",
+      "organization": "Universidad de Pamplona"
+    },
+    {
+      "title": "Heriberto Rangel-Navia",
+      "role": "author",
+      "orcid": "https://orcid.org/0000-0001-8903-6736",
+      "organization": "Universidad de Pamplona"
+    },
+    {
+      "title": "Esther Mandelbaum Gonçalves Bianchini",
+      "role": "author",
+      "orcid": "https://orcid.org/0000-0002-2878-4826",
+      "organization": "University of the Argentine Social Museum"
     }
   ],
   "resources": [
     {
-      "name": "metadata",
-      "path": "data/raw/metadata.csv",
+      "name": "data.csv",
+      "path": "data/external/raw/data.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "household_id",
-            "type": "integer",
-            "description": "Unique identifier for each household",
-            "constraints": {
-              "minimum": 1
-            }
-          },
-          {
-            "name": "region",
-            "type": "string",
-            "description": "Geographic region where the household is located",
-            "constraints": {
-              "enum": ["North", "South", "Central"]
-            }
-          },
-          {
-            "name": "income",
-            "type": "number",
-            "description": "Reported monthly household income in USD",
-            "constraints": {
-              "minimum": 0,
-              "maximum": 10000
-            }
-          },
-          {
-            "name": "has_electricity",
-            "type": "boolean",
-            "description": "Whether the household has access to electricity"
-          }
-        ],
-        "primaryKey": ["household_id"]
-      }
+      "encoding": "utf-8"
+    },
+    {
+      "name": "metadata.csv",
+      "path": "data/external/raw/metadata.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "es_data.csv",
+      "path": "data/external/raw/es/data.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "data.json",
+      "path": "data/external/raw/es/data.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "data.xml",
+      "path": "data/external/raw/es/data.xml",
+      "format": "xml",
+      "mediatype": "application/xml",
+      "encoding": "utf-8"
     }
   ]
 }

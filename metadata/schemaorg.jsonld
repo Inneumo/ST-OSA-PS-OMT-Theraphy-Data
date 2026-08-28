@@ -1,30 +1,66 @@
 {
   "@context": "https://schema.org/",
   "@type": "Dataset",
-  "name": "Generic Open Dataset Template",
-  "description": "A reusable dataset template for scientific research aligned with FAIR principles. Includes metadata, codebooks, and catalog interoperability support.",
-  "url": "https://github.com/RYFoR/dataset-template",
+  "name": "Orofacial Myofunctional Therapy Dataset for Obstructive Sleep Apnea",
+  "description": "This dataset supports the study \"Artificial Intelligence-Enhanced Telemedicine for Orofacial Myofunctional Therapy in Sleep Apnea: Adult Patient Outcomes\". It contains anonymised clinical and treatment-response data from 87 adult patients who underwent AI-assisted Orofacial Myofunctional Therapy (OMT) using the Smart Therapy Manager® system, aimed at treating Obstructive Sleep Apnea (OSA) and Primary Snoring (PS). The data are provided in CSV, XLSX, TTL, XML and JSON formats and are intended for clinical research, machine-learning, sleep-medicine and treatment-outcome analysis.",
+  "url": "https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data",
   "keywords": [
-    "FAIR data",
-    "Open Science",
-    "Metadata",
-    "Template",
-    "Catalog Integration"
+    "Sleep Apnea",
+    "Respiratory Therapy",
+    "Orofacial Therapy",
+    "Primary Snoring",
+    "Myofuncional Characteristics"
   ],
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "creator": {
-    "@type": "Person",
-    "name": "Diego Rincon-Yanez",
-    "affiliation": {
-      "@type": "Organization",
-      "name": "Trinity College Dublin"
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Diego Rincon-Yanez",
+      "affiliation": [
+        {
+          "@type": "Organization",
+          "name": "WU Wien"
+        },
+        {
+          "@type": "Organization",
+          "name": "Universidad de Pamplona"
+        }
+      ],
+      "identifier": "https://orcid.org/0000-0002-8982-1678"
+    },
+    {
+      "@type": "Person",
+      "name": "Eliana Elizabeth Rivera Capacho",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Universidad de Pamplona"
+      },
+      "identifier": "https://orcid.org/0000-0001-7678-7522"
+    },
+    {
+      "@type": "Person",
+      "name": "Heriberto Rangel-Navia",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Universidad de Pamplona"
+      },
+      "identifier": "https://orcid.org/0000-0001-8903-6736"
+    },
+    {
+      "@type": "Person",
+      "name": "Esther Mandelbaum Gonçalves Bianchini",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "University of the Argentine Social Museum"
+      },
+      "identifier": "https://orcid.org/0000-0002-2878-4826"
     }
-  },
+  ],
   "distribution": {
     "@type": "DataDownload",
-    "contentUrl": "https://github.com/RYFoR/dataset-template/archive/refs/heads/main.zip",
+    "contentUrl": "https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/archive/refs/heads/main.zip",
     "encodingFormat": "application/zip"
   },
-  "version": "3.3.0",
+  "version": "3.5.0",
   "datePublished": "2025-08-07"
 }

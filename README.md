@@ -1,113 +1,105 @@
-# 📊 [Dataset Title Here]
+# 📊 Orofacial Myofunctional Therapy for Obstructive Apnea Theraphy in Adults Dataset
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC--BY--4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![DOI: 10.5281/zenodo.XXXXXXX](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
-![FAIR Data](https://img.shields.io/badge/FAIR-Compliant-4db8ff)
-![Status](https://img.shields.io/badge/status-published-blue)
-[![Made with Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](notebook/)
-[![Open Science](https://img.shields.io/badge/open%20science-yes-brightgreen)](https://www.fosteropenscience.eu/)
+| | |
+| :--- | :--- |
+| **Docs** | [![English](https://img.shields.io/badge/English-EN-blue)](README.md) [![Español](https://img.shields.io/badge/Español-ES-red)](docs/README.es.md) |
+| **Open Science** | [![License: CC BY 4.0](https://img.shields.io/badge/License-CC--BY--4.0-lightgrey.svg)](LICENSE) [![Open Science](https://img.shields.io/badge/open%20science-yes-brightgreen)](https://www.fosteropenscience.eu/) [![FAIR Data](https://img.shields.io/badge/FAIR-Compliant-4db8ff)](FAIR.md) |
+| **Code** | [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](notebooks/) |
+| **Metadata** | [![DCAT-TTL](https://img.shields.io/badge/meta-DCAT%20TTL-brightgreen)](metadata/dcat.ttl) [![JSON-Schema](https://img.shields.io/badge/metadata-JSON%20Schema-blue)](metadata/metadata_schema.json) [![Schema.org JSON-LD](https://img.shields.io/badge/metadata-JSON%20LD-orange)](metadata/schemaorg.jsonld) [![DOI](https://img.shields.io/badge/metadata-DOI-ff69b4)](metadata/identifiers/doi.txt) [![ORCID](https://img.shields.io/badge/metadata-ORCID-ffb6c1)](metadata/identifiers/orcid_ids.txt) |
+| **Cite** | [![DOI: 10.1016/j.rmed.2025.108460](https://zenodo.org/badge/DOI/10.1016/j.rmed.2025.108460.svg)](https://doi.org/10.1016/j.rmed.2025.108460) |
 
-> ⚠️ **This is a template file**. Please customize each section with your own dataset-specific details. Placeholder fields are marked clearly.
+<h4 align="right"><strong>English</strong> | <a href="docs/README.es.md">Español</a> </h4>
+
+---
 
 ## 🧭 Overview
 
-This dataset contains [briefly describe dataset contents: e.g. "survey responses from 1500 households across three regions in Colombia, collected during 2024"]. It was prepared using a standardized FAIR-aligned data template and includes all relevant documentation for reuse, citation, and integration into scientific workflows.
+This dataset supports the study _"Artificial Intelligence-Enhanced Telemedicine for Orofacial Myofunctional Therapy in Sleep Apnea: Adult Patient Outcomes"_. It includes anonymized clinical and treatment response data from 87 adult patients who underwent AI-assisted Orofacial Myofunctional Therapy (OMT) using the Smart Therapy Manager® system, aimed at treating Obstructive Sleep Apnea (OSA) and Primary Snoring (PS).
 
-It is intended for use in [e.g., social sciences, policy research, urban planning] and is distributed under an open license to encourage transparency and collaboration.
+### Study Digest
+
+- **Study Type**: Retrospective Observational Cohort  
+- **Period**: November 2021 – November 2022  
+- **Location**: NEUMOMED Clinic, Medellín, Colombia  
+- **Sample Size**: 87 patients  
+- **Format**: CSV (anonymized), XLSX, TTL, XML, JSON  
+- **Target Use**: Clinical research, machine learning, sleep medicine, treatment outcome analysis.
 
 ---
 
 ## 📚 Table of Contents
+  - [🧭 Overview](#overview)
+  - [📚 Table of Contents](#table-of-contents)
+  - [📁 Files and Structure](#files-and-structure)
+  - [🧬 FAIR Statement](#fair-statement)
+  - [📖 Citation](#citation)
+  - [🤝 Contributing](#contributing)
+  - [📬 Contact](#contact)
 
-1. [Overview](#overview)
-2. [File and Structture](#-files-and-structure)
-3. [Key Files](#-key-files)
-4. [Usage](#-usage)
-5. [FAIR Statement](#fair-statement)
-6. [Citation](#-citation)
-7. [Contributing](#-contr})
-8. [License](#license)
-9. [Contact](#contact)
 
 ---
 
 ## 📁 Files and Structure
 
 ```
-📦 dataset-name/
-├── data/raw/                  # Original data files
-├── docs/                      # Documentation and codebook
-├── notebooks/                 # Data exploration and analysis notebooks
-├── catalog/                   # Metadata catalog and schema
-├── FAIR/                      # FAIR machine-readable metadata (optional)
+📦 ST-OSA-PS-OMT-Theraphy-Data/
+├── data/external/raw/   # Original data files
+├── docs/                # Documentation and codebook
+├── notebooks/           # Data exploration and analysis notebooks
+├── metadata/            # Machine-readable metadata (DCAT, JSON-Schema, etc.)
 ├── LICENSE
 ├── CITATION.cff
 └── README.md
-```
+````
 
----
+### 📂 Key Files
 
-## 📂 Key Files
-
-- `data/raw/*.csv`: Raw dataset files (e.g., survey_data.csv)
-- `docs/codebook.md`: Definitions and value domains for variables
-- `docs/data_dictionary.md`: Column-by-column descriptions
-- `docs/methodology.md`: Description of how the data was collected or generated
-- `docs/quality_report.md`: Summary of quality and completeness checks
-- `catalog/catalog.json`: Machine-readable metadata following FAIR principles
-- `catalog/schema.yaml`: Data structure specification
-- `notebooks/`: Jupyter notebooks for exploration and analysis
-
----
-
-## 🔍 Usage
-
-You can explore the data using the provided Jupyter notebooks. To get started:
-
-``` bash
-# Clone the repository
-git clone https://github.com/ryfor/dataset-name.git
-cd dataset-name
-
-# Open Jupyter
-jupyter notebook notebooks/01-explore_raw_data.ipynb
-```
-
-Alternatively, load the CSV into your tool of choice (Python, R, Excel, etc.)
-
-This dataset can be integrated into institutional repositories, linked data portals, or educational platforms. The structure is designed for maximum compatibility with data catalogs, FAIR APIs, and data governance workflows
+- `data/external/raw/*.csv`: Primary clinical and treatment datasets (available in English and Spanish).
+- `data/external/raw/metadata.csv`: Metadata describing the contents of the raw data files.
+- `docs/*.md`: Essential documentation including `data_dictionary.md`, `methodology.md`, and `quality_report.md`.
+- `metadata/*.json|ttl|jsonld`: Machine-readable metadata following FAIR principles (DCAT-TTL, JSON-Schema, and Schema.org).
+- `notebooks/*.ipynb`: Jupyter notebooks for data exploration, preprocessing, and analysis.
 
 ---
 
 ## 🧬 FAIR Statement
 
-This dataset follows the FAIR data principles:
+This dataset follows the [FAIR Data Principles](https://www.go-fair.org/fair-principles/):
 
-- **Findable**: It is indexed and published with a DOI.
-- **Accessible**: All files are publicly available in open formats.
-- **Interoperable**: Metadata and structure follow community standards.
-- **Reusable**: Documentation and licensing enable long-term reuse.
+- **Findable**: DOI assigned and metadata indexed in open repositories  
+- **Accessible**: Openly licensed under CC-BY 4.0 with no access restrictions  
+- **Interoperable**: Provided in standard formats with machine-readable metadata  
+- **Reusable**: Includes clear licensing, documentation, and citation guidelines
 
-Machine-readable metadata is available in the `FAIR/` and `catalog/` folders.
+Machine-readable metadata is available in the [`metadata/`](metadata/) folder.
 
-**Note:** Adapt to all your FAIR compliants statements to this list
+➡️ See the [`FAIR.md`](FAIR.md) file for a complete FAIR compliance breakdown.
 
 ---
 
 ## 📖 Citation
 
-If you use this dataset, please cite:
+Please cite both the dataset and the corresponding paper, the suggested BiBtex entry is the following:
 
 ```bibtex
-@dataset{dataset_author_2025,
-  author       = {Farnwick, Alberic and Kozlova, Nadezhka-Elis and Oluremi, Tundé-Maxon},
-  title        = {Household Survey Dataset: Rural Infrastructure and Wellbeing, 2024},
-  year         = {2025},
-  publisher    = {RYFoR Research Commons},
-  doi          = {10.5281/zenodo.XXXXXXX},
-  url          = {https://doi.org/10.5281/zenodo.XXXXXXX}
+@article{RiveraCapacho2025,
+author = {{Rivera Capacho}, Eliana Elizabeth and Bossa, Claudia Patricia Diaz and Campos, Mar{\'{i}}a Del Carmen and Rincon-Yanez, Diego and Rangel-Navia, Heriberto and Bianchini, Esther Mandelbaum Gon{\c{c}}alves},
+doi = {10.1016/j.rmed.2025.108460},
+issn = {15323064},
+journal = {Respiratory medicine},
+month = {nov},
+pmid = {41176093},
+title = {{Telemedicine-supported structured Orofacial Myofunctional Therapy model for Obstructive Sleep Apnea: Patients' report outcomes measurements}},
+volume = {249},
+year = {2025}
 }
 ```
+
+### Acknowledgments
+
+- **NEUMOMED Sleep and Pulmonology Clinic**  
+- **University of Pamplona**  
+- All contributing authors and patients who consented to data usage
 
 ---
 
@@ -121,11 +113,14 @@ This project is licensed under the [CC BY 4.0 License](LICENSE).
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute to this project.
 
-## 🧾 Code of Conduct
-
 This project adheres to a [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this standard.
 
 
 ## 📬 Contact
 
 For questions or collaboration inquiries, contact the dataset curators listed in the [`CITATION.cff`](./CITATION.cff).
+
+If there are any troubles or you have any questions, please open an issue stating the encountered problem. Contributing is always welcome. The [Github repository Issues URL](https://github.com/Inneumo/ST-OSA-PS-OMT-Therapy-Data/issues).  And contributing is always welcome. The [Github repository URL](https://github.com/Inneumo/ST-OSA-PS-OMT-Therapy-Data).
+
+
+Happy hacking!! 🖖🖖.

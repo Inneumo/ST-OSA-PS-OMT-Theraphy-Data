@@ -1,0 +1,72 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "rofacial Myofunctional Therapy Dataset for Obstructive Sleep Apnea",
+  "description": "This dataset contains anonymized clinical data from a cohort of 87 adult patients with obstructive sleep apnea (OSA) and primary snoring (PS), treated with AI-assisted Orofacial Myofunctional Therapy (OMT) using Smart Therapy Manager. The dataset supports the study on telemedicine-enhanced interventions for improving adherence and patient outcomes.",
+  "url": "https://github.com/Inneumo/ST-OSA-PS-OMT-Therapy-Data",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.1016/j.rmed.2025.108460"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Universidad de Pamplona / NEUMOMED Sleep and Pulmonology Clinic"
+  },
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Diego Rincon-Yanez",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "WU Wien & Universidad de Pamplona"
+      },
+      "identifier": "https://orcid.org/0000-0002-8982-1678"
+    },
+    {
+      "@type": "Person",
+      "name": "Eliana Elizabeth Rivera Capacho",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Universidad de Pamplona"
+      },
+      "identifier": "https://orcid.org/0000-0001-7678-7522"
+    },
+    {
+      "@type": "Person",
+      "name": "Heriberto Rangel-Navia",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Universidad de Pamplona"
+      },
+      "identifier": "https://orcid.org/0000-0001-8903-6736"
+    },
+    {
+      "@type": "Person",
+      "name": "Esther Mandelbaum Gonçalves Bianchini",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "University of the Argentine Social Museum"
+      },
+      "identifier": "https://orcid.org/0000-0002-2878-4826"
+    }
+  ],
+  "datePublished": "2025-08-07",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "keywords": [
+    "Sleep Apnea",
+    "Respiratory Therapy",
+    "Orofacial Therapy",
+    "Primary Snoring",
+    "Myofunctional Characteristics"
+  ],
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Medellín, Colombia"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Research support",
+    "url": "https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/issues"
+  }
+}

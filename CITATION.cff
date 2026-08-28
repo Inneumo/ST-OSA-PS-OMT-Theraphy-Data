@@ -1,24 +1,37 @@
 cff-version: 1.2.0
-message: "If you use this dataset template, please cite it as below."
-title: "RYFoR Dataset Template for FAIR and Reusable Scientific Data"
-version: "3.3.0"
-doi: "10.5281/zenodo.1234567"
+message: "If you use this dataset, please cite it using the metadata below."
+title: "Orofacial Myofunctional Therapy Dataset for Obstructive Sleep Apnea"
+version: "3.5.0"
+doi: "10.1016/j.rmed.2025.108460"
 date-released: 2025-08-07
 
 authors:
   - family-names: "Rincon-Yanez"
     given-names: "Diego"
-    affiliation: "Trinity College Dublin"
+    affiliation: 
+      - "WU Wien"
+      - "Universidad de Pamplona"
     orcid: "https://orcid.org/0000-0002-8982-1678"
-    email: "rinconyanezd+ryfor@gmail.com"
+  - family-names: Rivera Capacho
+    given-names: Eliana Elizabeth
+    affiliation: "Universidad de Pamplona"
+    orcid: "https://orcid.org/0000-0001-7678-7522"
+  - family-names: Rangel-Navia
+    given-names: Heriberto
+    affiliation: "Universidad de Pamplona"
+    orcid: "https://orcid.org/0000-0001-8903-6736"    
+  - family-names: Bianchini
+    given-names: Esther Mandelbaum Gonçalves
+    affiliation: "University of the Argentine Social Museum"
+    orcid: "https://orcid.org/0000-0002-2878-4826"    
 
 keywords:
-  - FAIR data
-  - dataset template
-  - research reproducibility
-  - open science
-  - metadata standards
+  - Sleep Apnea
+  - Respiratory Therapy
+  - Orofacial Therapy
+  - Primary Snoring
+  - Myofuncional Characteristics
 
-repository-code: "https://github.com/ryfor/dataset-template"
-url: "https://github.com/RYFoR/dataset-template"
-license: "CCBY"
+url: "https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data"
+repository-code: "https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data"
+license: "CC-BY-4.0"

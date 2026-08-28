@@ -1,7 +1,9 @@
 __pycache__/
 *.pyc
-data/processed/
+*.cmd
+.vscode
 .env
 .DS_Store
-sandbox/
-*.cmd
+
+*.zsh
+sandbox

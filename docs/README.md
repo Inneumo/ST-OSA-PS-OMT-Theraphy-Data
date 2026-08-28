@@ -1,67 +1,65 @@
-# 📘 Codebook (Template)
+# Documentation
 
-This codebook defines the schema of the dataset, including tables, columns, and types. It is designed for reuse across different domains and should be adapted to reflect the actual structure of your dataset.
-
-> ⚠️ **This is a template file**. Replace all placeholder values with your dataset-specific content. This format supports reproducibility, FAIR data sharing, and cross-domain reuse.
+This file provides a comprehensive overview of the methodology, summary, and ethical practices behind the **Orofacial Myofunctional Therapy Survivor Dataset**, which supports the research: [**Telemedicine-supported structured Orofacial Myofunctional Therapy model for Obstructive Sleep Apnea: Patients' report outcomes measurements**](https://doi.org/10.1016/j.rmed.2025.108460)
 
 ---
 
-## 🧱 Tables Overview
+## 1. Study Summary
 
-Each section below represents one logical data table or sheet. You may include one or multiple tables depending on your dataset.
+**Objective**  
 
-### Table: `Table_Name_1`
+To evaluate the effectiveness of AI-enhanced telemedicine delivery of Orofacial Myofunctional Therapy (OMT) in improving clinical outcomes for adult patients with Obstructive Sleep Apnea (OSA) and Primary Snoring (PS).
 
-- **Description**: [Insert short explanation of what this table contains]
-- **Columns**:
-  1. `column_1` (`Data_Type`) — [Brief description]
-  2. `column_2` (`Data_Type`) — [Brief description]
-  3. `column_3` (`Data_Type`) — [Brief description]
-
-### Table: `Table_Name_2`
-
-- **Description**: [Insert short explanation]
-- **Columns**:
-  1. `column_1` (`Data_Type`) — [Brief description]
-  2. `column_2` (`Data_Type`) — [Brief description]
-  3. `column_3` (`Data_Type`) — [Brief description]
-
-### Table: `Table_Name_3`
-
-- **Description**: [Insert short explanation]
-- **Columns**:
-  1. `column_1` (`Data_Type`) — [Brief description]
-  2. `column_2` (`Data_Type`) — [Brief description]
-  3. `column_3` (`Data_Type`) — [Brief description]
+**Design**  
+- Type: Retrospective observational cohort study  
+- Sample Size: 87 adult patients  
+- Setting: NEUMOMED Sleep and Pulmonology Clinic, Medellín, Colombia  
+- Therapy Platform: Smart Therapy Manager®  
+- Duration: Median of 12.5 weeks of OMT
 
 ---
 
-## 🔗 Relationships (if applicable)
+## 2. Methodology
 
-Describe any relationships between tables, such as:
+**Inclusion Criteria**
+- Adults >18 years with OSA or PS
+- Received ST-OSA-PS-OMT therapy via Smart Therapy Manager®
+- Completed at least 8 weeks of treatment and pre/post assessments
 
-- Foreign key constraints
-- Joinable fields (e.g., `household_id`)
-- Shared identifiers or time references
+**Exclusion Criteria**
+- Patients under 18, pregnant, or with cognitive barriers
+- Incomplete or insufficient clinical records
+
+**Therapy and Tools**
+- Therapy Protocol: ST-OSA-PS-OMT
+- Tools: Epworth Sleepiness Scale, PSG/PLG studies, internal PROMs (EPE-TMO-TRS-PROMs)
+- Data collected from electronic clinical records and exported into CSV format for reuse
 
 ---
 
-## 📚 Conventions and Notes
+## 3. Ethical Considerations
 
-- **Naming conventions**: Use `snake_case` or other consistent naming practices
-- **Data types**: Align with common schema practices (Integer, Float, String, Boolean, Date, Categorical)
-- **Versioning**: Update this file as your schema evolves
+**Review Board Approval**
+- Ethics Committee: University of Pamplona Ethics and Environmental Impact Committee
+- Approval Reference: Minutes No. 007, December 16, 2020
+
+**Informed Consent**
+- Written informed consent was obtained from all participants
+- Consent covered use of anonymized data for research purposes
+
+**Anonymization & Data Protection**
+- All direct identifiers were removed
+- Manual review of dataset to ensure no indirect identifiers persisted
+- Data processed and shared following Colombian legal and ethical standards
+
+**Compliance**
+- Declaration of Helsinki
+- Institutional data policies
+- National laws on human subject research
 
 ---
 
->## ✍️ Reuse Instructions
->
->This file is designed to be duplicated and customized:
->
->- Replace table and column placeholders with your actual data model
->- Add or remove tables as necessary
->- Link to `data_dictionary.md` for column-level descriptions
->- Use in combination with `schema.yaml` and `catalog.json` for interoperability
->
->This codebook enhances transparency, reproducibility, and the long-term usability of research data.
+## Contact
 
+For inquiries or concerns regarding the study or dataset, please visit the GitHub repository:  
+🔗 https://github.com/Inneumo/ST-OSA-PS-OMT-Therapy-Data/issues

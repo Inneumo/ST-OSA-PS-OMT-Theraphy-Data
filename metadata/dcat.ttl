@@ -1,30 +1,56 @@
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dct:  <http://purl.org/dc/terms/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 
-<https://github.com/RYFoR/dataset-template>
+<https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data>
     a dcat:Dataset ;
-    dct:title "Generic Open Dataset Template" ;
-    dct:description "A generic and reusable dataset template for open research aligned with FAIR principles, including documentation, metadata, and access policies." ;
+    dct:title "Orofacial Myofunctional Therapy Dataset for Obstructive Sleep Apnea" ;
+    dct:description """This dataset supports the study
+"Artificial Intelligence-Enhanced Telemedicine for Orofacial Myofunctional Therapy in Sleep Apnea: Adult Patient Outcomes".
+It contains anonymised clinical and treatment-response data from 87 adult patients who underwent AI-assisted Orofacial Myofunctional Therapy (OMT) using the Smart Therapy Manager® system, aimed at treating Obstructive Sleep Apnea (OSA) and Primary Snoring (PS). The data are provided in CSV, XLSX, TTL, XML and JSON formats and are intended for clinical research, machine-learning, sleep-medicine and treatment-outcome analysis.""" ;
     dct:creator [
         a foaf:Person ;
         foaf:name "Diego Rincon-Yanez" ;
         foaf:mbox "mailto:rinconyanezd+ryfor@gmail.com" ;
-        foaf:affiliation "Trinity College Dublin"
+        foaf:affiliation "WU Wien & Universidad de Pamplona" ;
+        foaf:identifier <https://orcid.org/0000-0002-8982-1678>
+    ] ;
+    dct:creator [
+        a foaf:Person ;
+        foaf:name "Eliana Elizabeth Rivera Capacho" ;
+        foaf:mbox "mailto:<email>" ;          # placeholder
+        foaf:affiliation "Universidad de Pamplona" ;
+        foaf:identifier <https://orcid.org/0000-0001-7678-7522>
+    ] ;
+    dct:creator [
+        a foaf:Person ;
+        foaf:name "Heriberto Rangel-Navia" ;
+        foaf:mbox "mailto:<email>" ;          # placeholder
+        foaf:affiliation "Universidad de Pamplona" ;
+        foaf:identifier <https://orcid.org/0000-0001-8903-6736>
+    ] ;
+    dct:creator [
+        a foaf:Person ;
+        foaf:name "Esther Mandelbaum Gonçalves Bianchini" ;
+        foaf:mbox "mailto:<email>" ;          # placeholder
+        foaf:affiliation "University of the Argentine Social Museum" ;
+        foaf:identifier <https://orcid.org/0000-0002-2878-4826>
     ] ;
     dct:issued "2025-08-07"^^xsd:date ;
     dct:language "en" ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcat:keyword "FAIR data", "Open Science", "Template", "Metadata", "Catalog Integration" ;
+    dcat:keyword "Sleep Apnea", "Respiratory Therapy", "Orofacial Therapy",
+                 "Primary Snoring", "Myofunctional Characteristics" ;
     dcat:distribution [
         a dcat:Distribution ;
-        dcat:accessURL <https://github.com/RYFoR/dataset-template/archive/refs/heads/main.zip> ;
+        dcat:accessURL <https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/archive/refs/heads/main.zip> ;
         dcat:mediaType "application/zip" ;
-        dcat:downloadURL <https://github.com/RYFoR/dataset-template/archive/refs/heads/main.zip>
+        dcat:downloadURL <https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/archive/refs/heads/main.zip>
     ] ;
-    dcat:landingPage <https://github.com/RYFoR/dataset-template> ;
+    dcat:landingPage <https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data> ;
     dct:publisher [
         a foaf:Organization ;
-        foaf:name "RYFoR: Rincon-Yanez FAIR Open Research"
+        foaf:name "Inneumo" ;
+        foaf:affiliation "Universidad de Pamplona"  # placeholder
     ] .
