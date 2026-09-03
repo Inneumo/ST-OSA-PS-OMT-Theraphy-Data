@@ -1,0 +1,420 @@
+{
+  "dataset": "ST-OSA-PS-OMT Therapy Data",
+  "source_file": "data.csv",
+  "encoding": {
+    "missing": "NA",
+    "binary": {
+      "SI": 1,
+      "NO": 0
+    },
+    "categorical_code_format": "compact integer string, starting at 0 per column",
+    "reversibility": "Use value_mappings to recover each original categorical value."
+  },
+  "row_count": 126,
+  "column_count": 38,
+  "columns": [
+    {
+      "original_name": "ESQUEMA NIVEL 1",
+      "name": "esquema_nivel_1",
+      "type": "categorical_code",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "EDAD",
+      "name": "edad",
+      "type": "number",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "SEXO",
+      "name": "sexo",
+      "type": "categorical_code",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "IMC",
+      "name": "imc",
+      "type": "number",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "EPWORTH BASAL",
+      "name": "epworth_basal",
+      "type": "number",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "EPWORTH SALIDA",
+      "name": "epworth_salida",
+      "type": "number",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "PuntGeneral",
+      "name": "puntgeneral",
+      "type": "number",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "SINTOMAS BASALES",
+      "name": "sintomas_basales",
+      "type": "categorical_code",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "SINTOMA PRINCIPAL",
+      "name": "sintoma_principal",
+      "type": "categorical_code",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "TIPO EXAMEN DE SUEÑO",
+      "name": "tipo_examen_de_sueno",
+      "type": "categorical_code",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "IAH BASAL",
+      "name": "iah_basal",
+      "type": "number",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "INDICE DE RONQUIDO/h",
+      "name": "indice_de_ronquido_h",
+      "type": "number",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "% SpO2",
+      "name": "spo2",
+      "type": "number",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "MÍNIMAS DE O2",
+      "name": "minimas_de_o2",
+      "type": "number",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "T 90",
+      "name": "t_90",
+      "type": "number",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "ANTC QX EN VAS",
+      "name": "antc_qx_en_vas",
+      "type": "boolean",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "CUAL (ES)",
+      "name": "cual_es",
+      "type": "categorical_code",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "OVAS",
+      "name": "ovas",
+      "type": "boolean",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "LENG RETRAÍDA",
+      "name": "leng_retraida",
+      "type": "boolean",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "UVULA ALARGADA",
+      "name": "uvula_alargada",
+      "type": "categorical_code",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "VELO DESCENDIDO",
+      "name": "velo_descendido",
+      "type": "categorical_code",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "PILARES ERITEMATOSOS",
+      "name": "pilares_eritematosos",
+      "type": "categorical_code",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "MAN BOSTEZO - VELO",
+      "name": "man_bostezo_velo",
+      "type": "categorical_code",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "MAN BOSTEZO - ÚVULA",
+      "name": "man_bostezo_uvula",
+      "type": "categorical_code",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "MAN. FONEMA - VELO",
+      "name": "man_fonema_velo",
+      "type": "categorical_code",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "MAN FONEMA - ÚVULA",
+      "name": "man_fonema_uvula",
+      "type": "categorical_code",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "SIG. MASTICACIÓN",
+      "name": "sig_masticacion",
+      "type": "boolean",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "SIG DE DEGLUCIÓN",
+      "name": "sig_de_deglucion",
+      "type": "boolean",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "CO_Cardiovasculares",
+      "name": "co_cardiovasculares",
+      "type": "boolean",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "CO_Endocrino_metabólicas",
+      "name": "co_endocrino_metabolicas",
+      "type": "boolean",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "CO_Psiquiátricas",
+      "name": "co_psiquiatricas",
+      "type": "boolean",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "CO_Pulmonares",
+      "name": "co_pulmonares",
+      "type": "boolean",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "Línea_media_desviada",
+      "name": "linea_media_desviada",
+      "type": "boolean",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "Mordida_borde_a_borde",
+      "name": "mordida_borde_a_borde",
+      "type": "boolean",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "Mordida_abierta_anterior",
+      "name": "mordida_abierta_anterior",
+      "type": "boolean",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "Mordida_cruzada",
+      "name": "mordida_cruzada",
+      "type": "boolean",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "Maloclusión_clase_II",
+      "name": "maloclusion_clase_ii",
+      "type": "boolean",
+      "missing_value": "NA"
+    },
+    {
+      "original_name": "Maloclusión_clase_III",
+      "name": "maloclusion_clase_iii",
+      "type": "boolean",
+      "missing_value": "NA"
+    }
+  ],
+  "value_mappings": {
+    "esquema_nivel_1": {
+      "0": "TMO NIVEL 1",
+      "1": "TMO NIVEL 1 TCC",
+      "NA": ""
+    },
+    "sexo": {
+      "0": "MASCULINO",
+      "1": "FEMENINO",
+      "NA": ""
+    },
+    "sintomas_basales": {
+      "0": "Bruxismo",
+      "1": "Cansancio crónico",
+      "2": "Cefalea matutina",
+      "3": "Despertarse con ahogo",
+      "4": "Dificultad para conciliar el sueño",
+      "5": "Dificultad para mantener el sueño",
+      "6": "Movimientos bruscos",
+      "7": "Nicturia",
+      "8": "Ronquido",
+      "9": "Somnolencia diurna excesiva",
+      "NA": ""
+    },
+    "sintoma_principal": {
+      "0": "Cansancio crónico",
+      "1": "Cefalea matutina",
+      "2": "Despertarse con ahogo",
+      "3": "Dificultad para conciliar el sueño",
+      "4": "Dificultad para mantener el sueño",
+      "5": "Ronquido",
+      "6": "Somnolencia diurna excesiva",
+      "7": "Sueño no reparador",
+      "8": "Xerostomía",
+      "NA": ""
+    },
+    "tipo_examen_de_sueno": {
+      "0": "PLG",
+      "1": "PSG",
+      "NA": ""
+    },
+    "antc_qx_en_vas": {
+      "0": "NO",
+      "1": "SI",
+      "NA": ""
+    },
+    "cual_es": {
+      "0": "Amigdalectomía",
+      "1": "Amigdalectomía, Septoplastia",
+      "2": "Amigdalectomía, Septoplastia, Turbinoplastia",
+      "3": "Amigdalectomía, Turbinoplastia",
+      "4": "Ninguna",
+      "5": "Senos paranales",
+      "6": "Septoplastia",
+      "7": "Septoplastia, Turbinoplastia",
+      "8": "Turbinoplastia",
+      "NA": ""
+    },
+    "ovas": {
+      "0": "NO",
+      "1": "SI",
+      "NA": ""
+    },
+    "leng_retraida": {
+      "0": "NO",
+      "1": "SI",
+      "NA": ""
+    },
+    "uvula_alargada": {
+      "0": "NO",
+      "1": "No se visualiza",
+      "2": "SI",
+      "NA": ""
+    },
+    "velo_descendido": {
+      "0": "NO",
+      "1": "No se visualiza",
+      "2": "SI",
+      "NA": ""
+    },
+    "pilares_eritematosos": {
+      "0": "NO",
+      "1": "No se visualiza",
+      "2": "SI",
+      "NA": ""
+    },
+    "man_bostezo_velo": {
+      "0": "Asciende el velo reducido",
+      "1": "Asciende el velo totalmente",
+      "2": "No asciende el velo",
+      "3": "No se visualiza por dorso lingual alto",
+      "NA": ""
+    },
+    "man_bostezo_uvula": {
+      "0": "Contrae la úvula reducido",
+      "1": "Contrae la úvula totalmente",
+      "2": "No contrae la úvula",
+      "3": "No se observa por dorso lingual alto",
+      "NA": ""
+    },
+    "man_fonema_velo": {
+      "0": "Asciende el velo reducido",
+      "1": "Asciende el velo totalmente",
+      "2": "No asciende el velo",
+      "3": "No se visualiza por dorso lingual alto",
+      "NA": ""
+    },
+    "man_fonema_uvula": {
+      "0": "Contrae la úvula reducido",
+      "1": "Contrae la úvula totalmente",
+      "2": "No contrae la úvula",
+      "3": "No se visualiza por dorso lingual alto",
+      "NA": ""
+    },
+    "sig_masticacion": {
+      "0": "NO",
+      "1": "SI",
+      "NA": ""
+    },
+    "sig_de_deglucion": {
+      "0": "NO",
+      "1": "SI",
+      "NA": ""
+    },
+    "co_cardiovasculares": {
+      "0": "NO",
+      "1": "SI",
+      "NA": ""
+    },
+    "co_endocrino_metabolicas": {
+      "0": "NO",
+      "1": "SI",
+      "NA": ""
+    },
+    "co_psiquiatricas": {
+      "0": "NO",
+      "1": "SI",
+      "NA": ""
+    },
+    "co_pulmonares": {
+      "0": "NO",
+      "1": "SI",
+      "NA": ""
+    },
+    "linea_media_desviada": {
+      "0": "NO",
+      "1": "SI",
+      "NA": ""
+    },
+    "mordida_borde_a_borde": {
+      "0": "NO",
+      "1": "SI",
+      "NA": ""
+    },
+    "mordida_abierta_anterior": {
+      "0": "NO",
+      "1": "SI",
+      "NA": ""
+    },
+    "mordida_cruzada": {
+      "0": "NO",
+      "1": "SI",
+      "NA": ""
+    },
+    "maloclusion_clase_ii": {
+      "0": "NO",
+      "1": "SI",
+      "NA": ""
+    },
+    "maloclusion_clase_iii": {
+      "0": "NO",
+      "1": "SI",
+      "NA": ""
+    }
+  }
+}

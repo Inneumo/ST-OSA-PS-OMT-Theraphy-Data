@@ -1,133 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Orofacial Myofunctional Therapy Dataset - Consulting</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <!-- Favicon - use the GitHub repo logo -->
-  <link rel="icon" href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/raw/main/README.md" type="image/svg+xml">
+  <meta name="description" content="ST-OSA-PS-OMT Therapy Data: normalized, compactly encoded sleep-therapy and upper-airway assessment data.">
+  <title>ST-OSA-PS-OMT Therapy Data</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- ==================== Header ==================== -->
-  <header>
-    <div class="logo">
-      <a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data" target="_blank">
-        <img src="https://avatars.githubusercontent.com/u/171390550?s=200&v=4" alt="Dataset logo" width="40">
-        <span>Orofacial Myofunctional Therapy Dataset</span>
-      </a>
-    </div>
-
-    <!-- Navigation - collapses on mobile -->
-    <nav id="main-nav">
-      <ul>
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#data">Data</a></li>
-        <li><a href="#metadata">Metadata</a></li>
-        <li><a href="#fair">FAIR</a></li>
-        <li><a href="#resources">Resources</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#top">ST-OSA-PS-OMT</a>
+      <div class="nav-links">
+        <a href="#dataset">Dataset</a>
+        <a href="#artifacts">Artifacts</a>
+        <a href="#quality">Quality</a>
+        <a href="#use">Research use</a>
+      </div>
     </nav>
-
-    <button id="menu-toggle" aria-label="Toggle menu">&#9776;</button>
   </header>
 
-  <!-- ==================== Main Content ==================== -->
-  <main>
-    <!-- 1. Overview -->
-    <section id="overview">
-      <h1>Dataset Overview</h1>
-      <p>
-        The <strong>Orofacial Myofunctional Therapy Dataset for Obstructive Sleep Apnea</strong> supports the study
-        “Artificial Intelligence-Enhanced Telemedicine for Orofacial Myofunctional Therapy in Sleep Apnea: Adult Patient Outcomes”.
-        It contains anonymised clinical and treatment-response data from 87 adult patients who underwent AI-assisted Orofacial Myofunctional Therapy (OMT) using the Smart Therapy Manager® system.
-      </p>
-      <p>
-        <strong>Study period:</strong> November 2021 - November 2022<br>
-        <strong>Location:</strong> NEUMOMED Clinic, Medellín, Colombia<br>
-        <strong>Sample size:</strong> 87 patients<br>
-        <strong>Data formats:</strong> CSV, XLSX, TTL, XML, JSON
-      </p>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Open clinical research data</p>
+          <h1>Sleep-therapy data, prepared for reproducible analysis.</h1>
+          <p class="lede">A documented cohort of sleep-therapy and upper-airway assessments, with compact numeric encodings and English-language companion files.</p>
+          <div class="actions">
+            <a class="button primary" href="../data/processed/therapy_data_encoded_en.csv">Download English CSV</a>
+            <a class="button secondary" href="../data/processed/therapy_data_dictionary_en.json">Open English dictionary</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Dataset profile">
+          <span class="card-label">Dataset profile</span>
+          <strong>126</strong><span>records</span>
+          <strong>38</strong><span>variables</span>
+          <p>Spanish source records with normalized, English-readable derivatives.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- 2. Data -->
-    <section id="data">
-      <h2>Data Contents</h2>
-      <p>
-        The dataset is split into two main parts:
-      </p>
-      <ul>
-        <li><strong>Clinical data</strong> - anonymised patient records (age, sex, diagnosis, treatment response, etc.).</li>
-        <li><strong>Metadata</strong> - a CSV file describing the variables, units, and coding scheme.</li>
-      </ul>
-      <p>
-        All files are located in <code>data/external/raw/</code> and are freely downloadable from the GitHub repository.
-      </p>
+    <section id="dataset" class="section container">
+      <p class="eyebrow">What is included</p>
+      <h2>A compact, traceable data package</h2>
+      <div class="cards three">
+        <article class="card">
+          <h3>Clinical scope</h3>
+          <p>Demographics, BMI, Epworth scores, AHI, snoring, oxygenation, symptoms, upper-airway findings, comorbidities, and occlusion findings.</p>
+        </article>
+        <article class="card">
+          <h3>Language-neutral analysis</h3>
+          <p>ASCII <code>snake_case</code> headers and compact per-column codes support interoperable analysis without embedding verbose labels in the data table.</p>
+        </article>
+        <article class="card">
+          <h3>Reversible encoding</h3>
+          <p>Companion JSON dictionaries map every categorical code to its source label. Missing values are represented as <code>NA</code>.</p>
+        </article>
+      </div>
     </section>
 
-    <!-- 3. Metadata -->
-    <section id="metadata">
-      <h2>Machine-Readable Metadata</h2>
-      <p>
-        The dataset follows FAIR principles and provides metadata in several interoperable formats:
-      </p>
-      <ul>
-        <li><a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/blob/main/metadata/dcat.ttl" target="_blank">DCAT-TTL</a></li>
-        <li><a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/blob/main/metadata/schemaorg.jsonld" target="_blank">Schema.org JSON-LD</a></li>
-        <li><a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/blob/main/metadata/metadata_schema.json" target="_blank">JSON-Schema</a></li>
-        <li><a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/blob/main/metadata/identifiers/doi.txt" target="_blank">DOI</a></li>
-        <li><a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/blob/main/metadata/identifiers/orcid_ids.txt" target="_blank">ORCID IDs</a></li>
-      </ul>
-      <p>
-        The <a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/blob/main/datapackage.json" target="_blank">Frictionless Data Package</a> describes the structure of the data files and can be used by tools such as <code>datapackage-py</code>.
-      </p>
+    <section id="artifacts" class="section tinted">
+      <div class="container">
+        <p class="eyebrow">Repository artifacts</p>
+        <h2>Download the data and methods</h2>
+        <div class="artifact-list">
+          <a href="../data/processed/therapy_data_encoded_en.csv"><span>English encoded dataset</span><small>CSV · 126 × 38</small></a>
+          <a href="../data/processed/therapy_data_dictionary_en.json"><span>English codebook</span><small>JSON · labels and mappings</small></a>
+          <a href="../data/processed/therapy_data_encoded.csv"><span>Original-language encoded dataset</span><small>CSV · reversible codes</small></a>
+          <a href="../notebooks/06_publication_descriptive_figures_en.ipynb"><span>Publication figures notebook</span><small>Jupyter · descriptive figures</small></a>
+          <a href="../notebooks/05_data_quality_en.ipynb"><span>Data quality notebook</span><small>Jupyter · completeness checks</small></a>
+          <a href="../docs/methodology.md"><span>Processing methodology</span><small>Markdown · transformations</small></a>
+        </div>
+      </div>
     </section>
 
-    <!-- 4. FAIR -->
-    <section id="fair">
-      <h2>FAIR Compliance</h2>
-      <p>
-        The dataset adheres to the FAIR Data Principles (Findable, Accessible, Interoperable, Reusable).  For a detailed breakdown, see the <a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/blob/main/FAIR.md" target="_blank">FAIR.md</a> file.
-      </p>
+    <section id="quality" class="section container">
+      <p class="eyebrow">Observed quality profile</p>
+      <h2>Transparent about what the data contain</h2>
+      <div class="quality-grid">
+        <div class="metric"><strong>123</strong><span>fully complete records</span></div>
+        <div class="metric"><strong>3</strong><span>records with missing cells</span></div>
+        <div class="metric"><strong>4</strong><span>missing cells total</span></div>
+        <div class="metric"><strong>0</strong><span>duplicate rows detected</span></div>
+      </div>
+      <p class="note">Missing cells occur in <code>followup_epworth</code>, <code>spo2</code>, <code>minimum_o2</code>, and <code>elongated_uvula</code>. No imputation is performed.</p>
     </section>
 
-    <!-- 5. Resources -->
-    <section id="resources">
-      <h2>Key Resources</h2>
-      <ul class="resource-list">
-        <li><a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data" target="_blank">GitHub Repository</a></li>
-        <li><a href="https://doi.org/10.1016/j.rmed.2025.108460" target="_blank">DOI (Zenodo)</a></li>
-        <li><a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/blob/main/README.md" target="_blank">README</a></li>
-        <li><a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/blob/main/docs/methodology.md" target="_blank">Methodology</a></li>
-        <li><a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/blob/main/docs/ethical_considerations.md" target="_blank">Ethical Considerations</a></li>
-        <li><a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/blob/main/docs/study_summary.md" target="_blank">Study Summary</a></li>
-        <li><a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/blob/main/metadata/dcat.ttl" target="_blank">DCAT-TTL</a></li>
-        <li><a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/blob/main/metadata/schemaorg.jsonld" target="_blank">Schema.org JSON-LD</a></li>
-        <li><a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/blob/main/metadata/metadata_schema.json" target="_blank">JSON-Schema</a></li>
-        <li><a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/blob/main/datapackage.json" target="_blank">Data Package</a></li>
-        <li><a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/blob/main/FAIR.md" target="_blank">FAIR Statement</a></li>
-        <li><a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/blob/main/CITATION.cff" target="_blank">Citation File (CFF)</a></li>
-        <li><a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/issues" target="_blank">GitHub Issues</a></li>
-      </ul>
-    </section>
-
-    <!-- 6. Contact -->
-    <section id="contact">
-      <h2>Contact & Support</h2>
-      <p>
-        For questions, collaboration proposals, or support, please open an issue in the
-        <a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/issues" target="_blank">GitHub Issues</a>
-        or email the corresponding authors listed in the <a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data/blob/main/CITATION.cff" target="_blank">CITATION.cff</a>.
-      </p>
+    <section id="use" class="section dark">
+      <div class="container narrow">
+        <p class="eyebrow">Responsible research use</p>
+        <h2>Describe the cohort before comparing it.</h2>
+        <p>The supplied data describe an observed cohort. The repository provides descriptive statistics and reproducible figures for comparison with other research, but the dataset should not be presented as representative of a wider patient population without an external reference population, documented sampling design, or appropriate weighting.</p>
+        <a class="text-link" href="../docs/quality_report.md">Read the quality report →</a>
+      </div>
     </section>
   </main>
 
-  <!-- ==================== Footer ==================== -->
-  <footer>
-    <p>© 2026 Inneumo - <a href="https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data" target="_blank">GitHub</a> | <a href="https://doi.org/10.1016/j.rmed.2025.108460" target="_blank">DOI</a></p>
+  <footer class="footer">
+    <div class="container footer-row">
+      <span>ST-OSA-PS-OMT Therapy Data</span>
+      <a href="../README.md">Repository documentation</a>
+    </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,460 @@
+{
+  "dataset": "ST-OSA-PS-OMT Therapy Data",
+  "source_file": "data.csv",
+  "encoding": {
+    "missing": "NA",
+    "binary": {
+      "NO": 0,
+      "YES": 1
+    },
+    "categorical_code_format": "compact integer string, starting at 0 per column",
+    "reversibility": "Use value_mappings to recover each original categorical value."
+  },
+  "row_count": 126,
+  "column_count": 38,
+  "columns": [
+    {
+      "original_name": "treatment_level_1",
+      "name": "treatment_level_1",
+      "type": "categorical_code",
+      "missing_value": "NA",
+      "source_name": "ESQUEMA NIVEL 1"
+    },
+    {
+      "original_name": "age",
+      "name": "age",
+      "type": "number",
+      "missing_value": "NA",
+      "source_name": "EDAD"
+    },
+    {
+      "original_name": "sex",
+      "name": "sex",
+      "type": "categorical_code",
+      "missing_value": "NA",
+      "source_name": "SEXO"
+    },
+    {
+      "original_name": "bmi",
+      "name": "bmi",
+      "type": "number",
+      "missing_value": "NA",
+      "source_name": "IMC"
+    },
+    {
+      "original_name": "baseline_epworth",
+      "name": "baseline_epworth",
+      "type": "number",
+      "missing_value": "NA",
+      "source_name": "EPWORTH BASAL"
+    },
+    {
+      "original_name": "followup_epworth",
+      "name": "followup_epworth",
+      "type": "number",
+      "missing_value": "NA",
+      "source_name": "EPWORTH SALIDA"
+    },
+    {
+      "original_name": "overall_score",
+      "name": "overall_score",
+      "type": "number",
+      "missing_value": "NA",
+      "source_name": "PuntGeneral"
+    },
+    {
+      "original_name": "baseline_symptoms",
+      "name": "baseline_symptoms",
+      "type": "categorical_code",
+      "missing_value": "NA",
+      "source_name": "SINTOMAS BASALES"
+    },
+    {
+      "original_name": "primary_symptom",
+      "name": "primary_symptom",
+      "type": "categorical_code",
+      "missing_value": "NA",
+      "source_name": "SINTOMA PRINCIPAL"
+    },
+    {
+      "original_name": "sleep_exam_type",
+      "name": "sleep_exam_type",
+      "type": "categorical_code",
+      "missing_value": "NA",
+      "source_name": "TIPO EXAMEN DE SUEÑO"
+    },
+    {
+      "original_name": "baseline_ahi",
+      "name": "baseline_ahi",
+      "type": "number",
+      "missing_value": "NA",
+      "source_name": "IAH BASAL"
+    },
+    {
+      "original_name": "snoring_index_per_hour",
+      "name": "snoring_index_per_hour",
+      "type": "number",
+      "missing_value": "NA",
+      "source_name": "INDICE DE RONQUIDO/h"
+    },
+    {
+      "original_name": "spo2",
+      "name": "spo2",
+      "type": "number",
+      "missing_value": "NA",
+      "source_name": "% SpO2"
+    },
+    {
+      "original_name": "minimum_o2",
+      "name": "minimum_o2",
+      "type": "number",
+      "missing_value": "NA",
+      "source_name": "MÍNIMAS DE O2"
+    },
+    {
+      "original_name": "t90",
+      "name": "t90",
+      "type": "number",
+      "missing_value": "NA",
+      "source_name": "T 90"
+    },
+    {
+      "original_name": "prior_upper_airway_surgery",
+      "name": "prior_upper_airway_surgery",
+      "type": "boolean",
+      "missing_value": "NA",
+      "source_name": "ANTC QX EN VAS"
+    },
+    {
+      "original_name": "surgery_type",
+      "name": "surgery_type",
+      "type": "categorical_code",
+      "missing_value": "NA",
+      "source_name": "CUAL (ES)"
+    },
+    {
+      "original_name": "upper_airway_obstruction",
+      "name": "upper_airway_obstruction",
+      "type": "boolean",
+      "missing_value": "NA",
+      "source_name": "OVAS"
+    },
+    {
+      "original_name": "retracted_tongue",
+      "name": "retracted_tongue",
+      "type": "boolean",
+      "missing_value": "NA",
+      "source_name": "LENG RETRAÍDA"
+    },
+    {
+      "original_name": "elongated_uvula",
+      "name": "elongated_uvula",
+      "type": "categorical_code",
+      "missing_value": "NA",
+      "source_name": "UVULA ALARGADA"
+    },
+    {
+      "original_name": "lowered_soft_palate",
+      "name": "lowered_soft_palate",
+      "type": "categorical_code",
+      "missing_value": "NA",
+      "source_name": "VELO DESCENDIDO"
+    },
+    {
+      "original_name": "erythematous_pillars",
+      "name": "erythematous_pillars",
+      "type": "categorical_code",
+      "missing_value": "NA",
+      "source_name": "PILARES ERITEMATOSOS"
+    },
+    {
+      "original_name": "yawn_soft_palate_movement",
+      "name": "yawn_soft_palate_movement",
+      "type": "categorical_code",
+      "missing_value": "NA",
+      "source_name": "MAN BOSTEZO - VELO"
+    },
+    {
+      "original_name": "yawn_uvula_movement",
+      "name": "yawn_uvula_movement",
+      "type": "categorical_code",
+      "missing_value": "NA",
+      "source_name": "MAN BOSTEZO - ÚVULA"
+    },
+    {
+      "original_name": "phonation_soft_palate_movement",
+      "name": "phonation_soft_palate_movement",
+      "type": "categorical_code",
+      "missing_value": "NA",
+      "source_name": "MAN. FONEMA - VELO"
+    },
+    {
+      "original_name": "phonation_uvula_movement",
+      "name": "phonation_uvula_movement",
+      "type": "categorical_code",
+      "missing_value": "NA",
+      "source_name": "MAN FONEMA - ÚVULA"
+    },
+    {
+      "original_name": "chewing_sign",
+      "name": "chewing_sign",
+      "type": "boolean",
+      "missing_value": "NA",
+      "source_name": "SIG. MASTICACIÓN"
+    },
+    {
+      "original_name": "swallowing_sign",
+      "name": "swallowing_sign",
+      "type": "boolean",
+      "missing_value": "NA",
+      "source_name": "SIG DE DEGLUCIÓN"
+    },
+    {
+      "original_name": "cardiovascular_comorbidity",
+      "name": "cardiovascular_comorbidity",
+      "type": "boolean",
+      "missing_value": "NA",
+      "source_name": "CO_Cardiovasculares"
+    },
+    {
+      "original_name": "endocrine_metabolic_comorbidity",
+      "name": "endocrine_metabolic_comorbidity",
+      "type": "boolean",
+      "missing_value": "NA",
+      "source_name": "CO_Endocrino_metabólicas"
+    },
+    {
+      "original_name": "psychiatric_comorbidity",
+      "name": "psychiatric_comorbidity",
+      "type": "boolean",
+      "missing_value": "NA",
+      "source_name": "CO_Psiquiátricas"
+    },
+    {
+      "original_name": "pulmonary_comorbidity",
+      "name": "pulmonary_comorbidity",
+      "type": "boolean",
+      "missing_value": "NA",
+      "source_name": "CO_Pulmonares"
+    },
+    {
+      "original_name": "deviated_midline",
+      "name": "deviated_midline",
+      "type": "boolean",
+      "missing_value": "NA",
+      "source_name": "Línea_media_desviada"
+    },
+    {
+      "original_name": "edge_to_edge_bite",
+      "name": "edge_to_edge_bite",
+      "type": "boolean",
+      "missing_value": "NA",
+      "source_name": "Mordida_borde_a_borde"
+    },
+    {
+      "original_name": "anterior_open_bite",
+      "name": "anterior_open_bite",
+      "type": "boolean",
+      "missing_value": "NA",
+      "source_name": "Mordida_abierta_anterior"
+    },
+    {
+      "original_name": "crossbite",
+      "name": "crossbite",
+      "type": "boolean",
+      "missing_value": "NA",
+      "source_name": "Mordida_cruzada"
+    },
+    {
+      "original_name": "class_ii_malocclusion",
+      "name": "class_ii_malocclusion",
+      "type": "boolean",
+      "missing_value": "NA",
+      "source_name": "Maloclusión_clase_II"
+    },
+    {
+      "original_name": "class_iii_malocclusion",
+      "name": "class_iii_malocclusion",
+      "type": "boolean",
+      "missing_value": "NA",
+      "source_name": "Maloclusión_clase_III"
+    }
+  ],
+  "value_mappings": {
+    "treatment_level_1": {
+      "0": "TMO LEVEL 1",
+      "1": "TMO LEVEL 1 CBT",
+      "NA": ""
+    },
+    "sex": {
+      "0": "MALE",
+      "1": "FEMALE",
+      "NA": ""
+    },
+    "baseline_symptoms": {
+      "0": "Bruxism",
+      "1": "Chronic fatigue",
+      "2": "Morning headache",
+      "3": "Waking up gasping",
+      "4": "Difficulty falling asleep",
+      "5": "Difficulty maintaining sleep",
+      "6": "Sudden movements",
+      "7": "Nocturia",
+      "8": "Snoring",
+      "9": "Excessive daytime sleepiness",
+      "NA": ""
+    },
+    "primary_symptom": {
+      "0": "Chronic fatigue",
+      "1": "Morning headache",
+      "2": "Waking up gasping",
+      "3": "Difficulty falling asleep",
+      "4": "Difficulty maintaining sleep",
+      "5": "Snoring",
+      "6": "Excessive daytime sleepiness",
+      "7": "Unrefreshing sleep",
+      "8": "Xerostomia",
+      "NA": ""
+    },
+    "sleep_exam_type": {
+      "0": "PLG",
+      "1": "PSG",
+      "NA": ""
+    },
+    "prior_upper_airway_surgery": {
+      "0": "NO",
+      "1": "YES",
+      "NA": ""
+    },
+    "surgery_type": {
+      "0": "Tonsillectomy",
+      "1": "Amigdalectomía, Septoplastia",
+      "2": "Amigdalectomía, Septoplastia, Turbinoplastia",
+      "3": "Amigdalectomía, Turbinoplastia",
+      "4": "None",
+      "5": "Paranasal sinuses",
+      "6": "Septoplasty",
+      "7": "Septoplastia, Turbinoplastia",
+      "8": "Turbinoplasty",
+      "NA": ""
+    },
+    "upper_airway_obstruction": {
+      "0": "NO",
+      "1": "YES",
+      "NA": ""
+    },
+    "retracted_tongue": {
+      "0": "NO",
+      "1": "YES",
+      "NA": ""
+    },
+    "elongated_uvula": {
+      "0": "NO",
+      "1": "Not visualized",
+      "2": "YES",
+      "NA": ""
+    },
+    "lowered_soft_palate": {
+      "0": "NO",
+      "1": "Not visualized",
+      "2": "YES",
+      "NA": ""
+    },
+    "erythematous_pillars": {
+      "0": "NO",
+      "1": "Not visualized",
+      "2": "YES",
+      "NA": ""
+    },
+    "yawn_soft_palate_movement": {
+      "0": "Reduced soft-palate elevation",
+      "1": "Complete soft-palate elevation",
+      "2": "No soft-palate elevation",
+      "3": "Not visualized due to high tongue dorsum",
+      "NA": ""
+    },
+    "yawn_uvula_movement": {
+      "0": "Reduced uvula contraction",
+      "1": "Complete uvula contraction",
+      "2": "No uvula contraction",
+      "3": "Not observed due to high tongue dorsum",
+      "NA": ""
+    },
+    "phonation_soft_palate_movement": {
+      "0": "Reduced soft-palate elevation",
+      "1": "Complete soft-palate elevation",
+      "2": "No soft-palate elevation",
+      "3": "Not visualized due to high tongue dorsum",
+      "NA": ""
+    },
+    "phonation_uvula_movement": {
+      "0": "Reduced uvula contraction",
+      "1": "Complete uvula contraction",
+      "2": "No uvula contraction",
+      "3": "Not visualized due to high tongue dorsum",
+      "NA": ""
+    },
+    "chewing_sign": {
+      "0": "NO",
+      "1": "YES",
+      "NA": ""
+    },
+    "swallowing_sign": {
+      "0": "NO",
+      "1": "YES",
+      "NA": ""
+    },
+    "cardiovascular_comorbidity": {
+      "0": "NO",
+      "1": "YES",
+      "NA": ""
+    },
+    "endocrine_metabolic_comorbidity": {
+      "0": "NO",
+      "1": "YES",
+      "NA": ""
+    },
+    "psychiatric_comorbidity": {
+      "0": "NO",
+      "1": "YES",
+      "NA": ""
+    },
+    "pulmonary_comorbidity": {
+      "0": "NO",
+      "1": "YES",
+      "NA": ""
+    },
+    "deviated_midline": {
+      "0": "NO",
+      "1": "YES",
+      "NA": ""
+    },
+    "edge_to_edge_bite": {
+      "0": "NO",
+      "1": "YES",
+      "NA": ""
+    },
+    "anterior_open_bite": {
+      "0": "NO",
+      "1": "YES",
+      "NA": ""
+    },
+    "crossbite": {
+      "0": "NO",
+      "1": "YES",
+      "NA": ""
+    },
+    "class_ii_malocclusion": {
+      "0": "NO",
+      "1": "YES",
+      "NA": ""
+    },
+    "class_iii_malocclusion": {
+      "0": "NO",
+      "1": "YES",
+      "NA": ""
+    }
+  },
+  "language": "en",
+  "source_dictionary": "therapy_data_dictionary.json"
+}
