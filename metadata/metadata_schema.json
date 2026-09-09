@@ -4,11 +4,18 @@
   "name": "rofacial Myofunctional Therapy Dataset for Obstructive Sleep Apnea",
   "description": "This dataset contains anonymized clinical data from a cohort of 87 adult patients with obstructive sleep apnea (OSA) and primary snoring (PS), treated with AI-assisted Orofacial Myofunctional Therapy (OMT) using Smart Therapy Manager. The dataset supports the study on telemedicine-enhanced interventions for improving adherence and patient outcomes.",
   "url": "https://github.com/Inneumo/ST-OSA-PS-OMT-Therapy-Data",
-  "identifier": {
-    "@type": "PropertyValue",
-    "propertyID": "DOI",
-    "value": "10.1016/j.rmed.2025.108460"
-  },
+  "identifier": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "DOI",
+      "value": "10.5281/zenodo.22285183"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "DOI",
+      "value": "10.1016/j.rmed.2025.108460"
+    }
+  ],
   "publisher": {
     "@type": "Organization",
     "name": "Universidad de Pamplona / NEUMOMED Sleep and Pulmonology Clinic"

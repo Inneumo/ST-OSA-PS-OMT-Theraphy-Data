@@ -14,15 +14,14 @@
 
 ## 🧭 Overview
 
-This dataset supports the study _"Artificial Intelligence-Enhanced Telemedicine for Orofacial Myofunctional Therapy in Sleep Apnea: Adult Patient Outcomes"_. It includes anonymized clinical and treatment response data from 87 adult patients who underwent AI-assisted Orofacial Myofunctional Therapy (OMT) using the Smart Therapy Manager® system, aimed at treating Obstructive Sleep Apnea (OSA) and Primary Snoring (PS).
+This dataset supports the study _"Artificial Intelligence-Enhanced Telemedicine for Orofacial Myofunctional Therapy in Sleep Apnea: Adult Patient Outcomes"_. It includes anonymized clinical and treatment response data from adult patients who underwent AI-assisted Orofacial Myofunctional Therapy (OMT) using the Smart Therapy Manager® system, aimed at treating Obstructive Sleep Apnea (OSA) and Primary Snoring (PS).
 
 ### Study Digest
 
 - **Study Type**: Retrospective Observational Cohort  
 - **Period**: November 2021 – November 2022  
 - **Location**: NEUMOMED Clinic, Medellín, Colombia  
-- **Sample Size**: 87 patients  
-- **Format**: CSV (anonymized), XLSX, TTL, XML, JSON  
+- **Format**: CSV (anonymized), XLSX, XML, JSON  
 - **Target Use**: Clinical research, machine learning, sleep medicine, treatment outcome analysis.
 
 ---

@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this dataset, please cite it using the metadata below."
 title: "Orofacial Myofunctional Therapy Dataset for Obstructive Sleep Apnea"
 version: "3.5.0"
-doi: "10.1016/j.rmed.2025.108460"
+doi: "10.5281/zenodo.22285183"
 date-released: 2025-08-07
 
 authors:
@@ -24,7 +24,10 @@ authors:
     given-names: Esther Mandelbaum Gonçalves
     affiliation: "University of the Argentine Social Museum"
     orcid: "https://orcid.org/0000-0002-2878-4826"    
-
+references:
+    - type: article
+      title: "Telemedicine-supported structured Orofacial Myofunctional Therapy model for Obstructive Sleep Apnea: Patients' report outcomes measurements"
+      doi: "10.1016/j.rmed.2025.108460"
 keywords:
   - Sleep Apnea
   - Respiratory Therapy

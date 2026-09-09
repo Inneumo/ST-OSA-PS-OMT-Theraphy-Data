@@ -8,7 +8,7 @@ The **ST-OSA-PS-OMT-Theraphy-Data** dataset follows the **FAIR Data Principles**
 
 | Principle | Implementation                                                                                                                                                    |
 | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **F1**    | The dataset is assigned a globally unique and persistent identifier (DOI: `10.1016/j.rmed.2025.108460`).                                                          |
+| **F1**    | The dataset is assigned a globally unique and persistent identifier (DOI: `10.5281/zenodo.22285183`).                                                          |
 | **F2**    | Rich, contextual metadata is provided in multiple machine-readable formats, including DCAT-TTL, Schema.org JSON-LD, JSON Schema, and a Frictionless Data Package. |
 | **F3**    | The dataset identifier is explicitly included in all metadata files, including `CITATION.cff`, `metadata_schema.json`, `schemaorg.jsonld`, and `dcat.ttl`.        |
 | **F4**    | The dataset and its metadata are indexed and discoverable through searchable resources, including GitHub, Zenodo, and the Open Science Framework.                 |
@@ -51,9 +51,10 @@ The **ST-OSA-PS-OMT-Theraphy-Data** dataset follows the **FAIR Data Principles**
 
 | Resource              | Link / Location                                                                               |
 | --------------------- | --------------------------------------------------------------------------------------------- |
-| **Dataset DOI**       | [10.1016/j.rmed.2025.108460](https://doi.org/10.1016/j.rmed.2025.108460)                      |
+| **Dataset DOI**       | [10.5281/zenodo.22285183](https://doi.org/10.5281/zenodo.22285183)                      |
 | **GitHub Repository** | [Inneumo/ST-OSA-PS-OMT-Theraphy-Data](https://github.com/Inneumo/ST-OSA-PS-OMT-Theraphy-Data) |
 | **Zenodo Record**     | [Zenodo](https://zenodo.org/record/108460)                                                    |
+| **Research DOI**      | [10.1016/j.rmed.2025.108460](https://doi.org/10.1016/j.rmed.2025.108460)                      |
 | **Metadata**          | `dcat.ttl`, `schemaorg.jsonld`, `metadata_schema.json`, `doi.txt`, `orcid_ids.txt`            |
 | **Documentation**     | `docs/`, `README.md`, `FAIR.md`                                                               |
 

@@ -13,7 +13,7 @@ To evaluate the effectiveness of AI-enhanced telemedicine delivery of Orofacial 
 ## Study Design
 
 - **Type**: Retrospective observational cohort study
-- **Sample Size**: 87 adult patients
+- **Sample Size**: 127 adult patients
 - **Setting**: NEUMOMED Sleep and Pulmonology Clinic, Medellín, Colombia
 - **Therapy Platform**: Smart Therapy Manager®
 - **Duration**: Median of 12.5 weeks of OMT
