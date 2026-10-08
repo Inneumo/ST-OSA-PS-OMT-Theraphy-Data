@@ -1,6 +1,6 @@
 # Documentation
 
-This file provides a comprehensive overview of the methodology, summary, and ethical practices behind the **Orofacial Myofunctional Therapy Survivor Dataset**, which supports the research: [**Telemedicine-supported structured Orofacial Myofunctional Therapy model for Obstructive Sleep Apnea: Patients' report outcomes measurements**](https://doi.org/10.1016/j.rmed.2025.108460)
+This file provides a comprehensive overview of the methodology, summary, and ethical practices behind the **Dataset on orofacial myofunctional assessment, sleep metrics and reported outcomes in adults with Obstructive Sleep Apnea**, which supports the research: [**Telemedicine-supported structured Orofacial Myofunctional Therapy model for Obstructive Sleep Apnea: Patients' report outcomes measurements**](https://doi.org/10.1016/j.rmed.2025.108460)
 
 ---
 
@@ -12,7 +12,7 @@ To evaluate the effectiveness of AI-enhanced telemedicine delivery of Orofacial 
 
 **Design**  
 - Type: Retrospective observational cohort study  
-- Sample Size: 87 adult patients  
+- Sample Size: 126 adult patients  
 - Setting: NEUMOMED Sleep and Pulmonology Clinic, Medellín, Colombia  
 - Therapy Platform: Smart Therapy Manager®  
 - Duration: Median of 12.5 weeks of OMT
@@ -22,7 +22,7 @@ To evaluate the effectiveness of AI-enhanced telemedicine delivery of Orofacial 
 ## 2. Methodology
 
 **Inclusion Criteria**
-- Adults >18 years with OSA or PS
+- Adults >18 years with OSA, PS
 - Received ST-OSA-PS-OMT therapy via Smart Therapy Manager®
 - Completed at least 8 weeks of treatment and pre/post assessments
 

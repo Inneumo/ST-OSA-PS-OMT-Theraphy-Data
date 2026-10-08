@@ -9,7 +9,7 @@ Rivera Capacho, E. E., Bossa, C. P. D., Campos, M. del C., Rincon-Yanez, D., Ran
 ## Study Design
 
 - **Type**: Retrospective observational cohort study
-- **Sample Size**: 87 adult patients
+- **Sample Size**: 126 adult patients
 - **Period**: November 2021 to November 2022
 - **Setting**: NEUMOMED Sleep and Pulmonology Clinic, Medellín, Colombia
 - **Ethical Approval**: University of Pamplona’s Ethics and Environmental Impact Committee (Minutes No. 007, Dec 16, 2020)
@@ -21,8 +21,6 @@ Rivera Capacho, E. E., Bossa, C. P. D., Campos, M. del C., Rincon-Yanez, D., Ran
 - Adults aged over 18 with a diagnosis of:
   - Obstructive Sleep Apnea (OSA) or
   - Primary Snoring (PS)
-- Treated using the Smart Therapy Manager® system
-- Minimum of 8 weeks of Orofacial Myofunctional Therapy (OMT)
 - Completed pre- and post-treatment assessments
 
 ---
@@ -32,20 +30,6 @@ Rivera Capacho, E. E., Bossa, C. P. D., Campos, M. del C., Rincon-Yanez, D., Ran
 - Incomplete clinical records
 - Under 18 years of age
 - Pregnant women
-- Cognitive limitations preventing therapy adherence
-
----
-
-## Intervention
-
-- **Therapy Protocol**: ST-OSA-PS-OMT model
-- **Delivery Mode**: Remote AI-enhanced platform via Smart Therapy Manager®
-- **Therapy Duration**: Median of 12.5 weeks
-- **Assessments**:
-  - Pre/post Epworth Sleepiness Scale (ESS)
-  - Pre/post PSG or PLG studies
-  - AI-assisted PROMs survey: EPE-TMO-TRS-PROMs
-  - Clinical phenotype evaluation
 
 ---
 

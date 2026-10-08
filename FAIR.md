@@ -30,7 +30,7 @@ The **ST-OSA-PS-OMT-Theraphy-Data** dataset follows the **FAIR Data Principles**
 
 | Principle | Implementation                                                                                                                                                                                                                                                      |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **I1**    | Data and metadata are provided in standard, widely used formats, including CSV, XLSX, TTL, XML, and JSON.                                                                                                                                                           |
+| **I1**    | Data and metadata are provided in standard, widely used formats, including CSV, XML, and JSON.                                                                                                                                                           |
 | **I2**    | Metadata is available in both human-readable formats (Markdown and README documentation) and machine-readable formats (JSON-LD, DCAT-TTL, and JSON Schema).                                                                                                         |
 | **I3**    | Terminology and metadata are aligned with relevant community standards. Clinical variables use **Clinical Data Interchange Standards Consortium (CDISC)** terminology where applicable, while the dataset is described using the **Schema.org Dataset** vocabulary. |
 
